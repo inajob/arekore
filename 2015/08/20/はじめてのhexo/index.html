@@ -6,7 +6,9 @@
   <title>はじめてのhexo | Hexo</title>
   <meta name="author" content="John Doe">
   
-  <meta name="description" content="hexoを使ってみる！なんかgithubpagesをサブディレクトリで運用していると面倒な設定があったが、なんとかなった">
+  <meta name="description" content="hexoを使ってみる！css,jsが読み込まれないなんかgithubpagesをサブディレクトリで運用していると面倒な設定があったが、なんとかなった
+
+http://3100.github.io/log/2015/08/10/hexo-with-subdirectory/ココを読んでたんだけど微妙に">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -105,8 +107,17 @@
 
 	<!-- content -->
 	<div class="mypage">		
-	    <h1 id="hexoを使ってみる！">hexoを使ってみる！</h1><p>なんかgithubpagesをサブディレクトリで運用していると面倒な設定があったが、なんとかなった</p>
+	    <h1 id="hexoを使ってみる！">hexoを使ってみる！</h1><h2 id="css,jsが読み込まれない">css,jsが読み込まれない</h2><p>なんかgithubpagesをサブディレクトリで運用していると面倒な設定があったが、なんとかなった</p>
 <p><img src="/arekore/images/rface.jpg" alt="rface"></p>
+<p><a href="http://3100.github.io/log/2015/08/10/hexo-with-subdirectory/" target="_blank" rel="external">http://3100.github.io/log/2015/08/10/hexo-with-subdirectory/</a><br>ココを読んでたんだけど微妙に違う・・<br>theme_configを書いても反応してくれない・・</p>
+<p>テーマによるのかもしれないけれどもurl,rootを設定すればとりあえず動いているように見える</p>
+<h2 id="共通の画像を読み込みたい">共通の画像を読み込みたい</h2><p>./source/images/</p>
+<p>に画像ファイルを置くことで</p>
+<p>./public/images/</p>
+<p>の下にdeployされるみたいだ。</p>
+<p>で<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="link_label">rface</span>](<span class="link_url">/arekore/images/rface.jpg</span>)</span><br></pre></td></tr></table></figure></p>
+<p>こんなふうに書けば参照できる（arekoreってのはこのブログのサブディレクトリ。 これをココに書くのは気持ち悪いのだが・・仕方ないか）<br>本当はブログポスト毎に画像のディレクトリを作って運用するものらしい。</p>
+<p>普通と違うことをしようとすると辛くなるのは、こういうツールの性だよね・・</p>
 	  
 	</div>
 
